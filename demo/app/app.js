@@ -14,6 +14,7 @@ var AppComponent = ng.core
   })
   .Class({
     constructor: function() {
+      this.catName = "Llama";
       this.catAge = 1;
       this.isAlive = function() {
         return this.catAge < 15;
