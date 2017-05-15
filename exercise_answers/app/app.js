@@ -9,8 +9,6 @@ var AppComponent = ng.core
   })
   .Class({
     constructor: function() {
-      var vm = this;
-
       this.getTime = () => {
         this.time = new Date();
         this.hour = this.time.getHours();

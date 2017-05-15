@@ -9,8 +9,6 @@ var AppComponent = ng.core
   })
   .Class({
     constructor: function() {
-      var vm = this;
-      this.catAge = 1;
 
     }
   });

@@ -1,4 +1,3 @@
-// vm variable
 // Live binding - setInterval, zones
 
 
@@ -9,6 +8,7 @@ var AppComponent = ng.core
       {{catName}}
       <br />
       age: {{catAge}}
+      <br />
       alive: {{isAlive()}}
     `
   })
@@ -19,10 +19,7 @@ var AppComponent = ng.core
       this.isAlive = function() {
         return this.catAge < 15;
       };
-      setInterval(() => {
-        this.catAge++;
-        console.log(this);
-      }, 100);
+      setInterval(() => {this.catAge ++}, 1000)
     }
   });
 
@@ -48,3 +45,6 @@ ng.platformBrowserDynamic
   .bootstrapModule(AppModule);
 
 
+// // setInterval(() => {
+// //         this.catAge++;
+// //       }, 10);
